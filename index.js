@@ -1,10 +1,10 @@
 //1. Find the last element of the following arrays.arr1 = [3,7,34,90,12]arr2 = [true, "green", "where",12,56]
  const arr1 = [3,7,34,90,12];
  const arr2 = [true, "green", "where",12,56];
- const lastItemInArr1 = arr1.pop();
- const lastItemInArr1temInArr2 = arr2.pop();
- console.log(lastItemInArr1);
- console.log(lastItemInArr1temInArr2);
+const findLastElementArr1 = arr1[arr1.length-1]
+const lastElementInArr2 = arr2[arr2.length-1]
+ console.log(findLastElementArr1);
+ console.log(lastElementInArr2);
 
 
  //2. Write a JS program that will join the following array elements into a string. myPets = ["Cow", "Bird", "Snake", "Dog"];
