@@ -23,13 +23,23 @@ const uniqueArr = arr.filter((item,index)=> {
     return arr.indexOf(item) === index;
 }
 )
+const duplicatesArr = arr.filter((item, index) => arr.indexOf(item) !== index)
 console.log(uniqueArr);
-console.log(arr);
+console.log(duplicatesArr);
 
 //5. Write a JS script to search for the following word in the array."food"If the word is present, return it else return "the search word was not found". let arr5 = ["the", "way", "x", 4];
 
 let arr5 = ["the", "way", "x", 4];
-console.log(arr5.includes("food"));
+const searchWord = "food";
+
+const ifItemExist = arr5.find((item) => item === searchWord);
+
+if (ifItemExist) {
+  console.log({ifItemExist});
+} else {
+  console.log("The search word was not found");
+}
+
 //6. Write a JS script to sort the following string:let word = "renniw"
 
 let word = "renniw";
